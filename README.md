@@ -46,7 +46,7 @@ Open http://localhost:5173 — sign up, browse, add to cart, checkout.
 
 ---
 
-## 2. Deploy live (for the interview)
+## 2. Deploy live
 
 ### Backend → Render (free tier)
 
@@ -80,9 +80,7 @@ Total time: ~20-30 min once both accounts exist.
 
 ---
 
-## 3. What's real vs. simplified (know this for the interview)
-
-Be upfront about these if asked — it's more credible than pretending otherwise:
+## 3. What's real vs. simplified 
 
 - **Auth**: real JWT-based auth, passwords hashed with Werkzeug, not a mock.
 - **Cart & checkout**: real state in SQL. A payment method selection page (UPI / Card /
@@ -93,9 +91,6 @@ Be upfront about these if asked — it's more credible than pretending otherwise
   checkout, since that's the only payment gateway wired up here.
 - **Recommendations**: content-based filtering — scores other products by shared category
   + tag overlap. It's a real, explainable algorithm, not a trained ML recommender model.
-  If asked "is this ML?" — answer honestly: it's a rule-based content filter, and say
-  what you'd do to make it a learned model given more time (e.g. collaborative filtering
-  from purchase history, or embeddings over product descriptions).
 - **Product data**: placeholder products + Lorem-Picsum-style placeholder images, not a real
   catalog or real product photography.
 - **UI/UX pattern**: styled after Myntra's browsing experience (sidebar filters, MRP/discount
